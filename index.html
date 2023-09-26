@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pls no reverse shell</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>Unsecured Remote Code Execution (Python Edition)</h1>
+    <form id="uploadForm" action="/upload" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+        <label for="srcFile"><b>upload python source file here: </b></label>
+        <input type="file" id="srcFile"><br><br>
+        <label for="number"><b>input worker count here (how many computers / processors / threads / etc. to use?): </b></label>
+        <input type="number" min="1" value="1" id="numWorkers" class="spinner"><br><br>
+        <button type="submit">Run Task</button>
+    </form>
+    <!-- This JavaScript only gets pulled in here because
+    it references the `form` element above, and so can't
+    be brought in before that element exists. -->
+    <script type="text/javascript" src="fileUpload.js"></script>
+    <h2>output:</h2>
+</body>
+</html>
