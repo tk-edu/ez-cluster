@@ -12,3 +12,5 @@ I like the commit message style that the [SerenityOS](https://github.com/Serenit
 
 <optional detailed information>
 ```
+## Code Review
+let's do code review before pushing directly to main branch 🙏
